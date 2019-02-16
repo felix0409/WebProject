@@ -84,7 +84,7 @@ def shop():
   ]
   return render_template('shop.html', mens=mens)
 
-@app.route('/home', methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def home():
   sample = [
     {
