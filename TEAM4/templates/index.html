@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PO &mdash; STREETWEAR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Bungee+Inline|Cedarville+Cursive|Cinzel+Decorative|Faster+One|Hanalei+Fill|Megrim|Merienda+One|Nanum+Gothic+Coding|Seaweed+Script|Shojumaru|UnifrakturMaguntia" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/css/lib/sample.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo|Cinzel|Gloria+Hallelujah|Orbitron" rel="stylesheet">
+
+
+
+    <style>
+        .about {
+            background-image: url(./static/img/statue-pts.jpg);
+        }
+            /* --------------------------
+    :: 10.0 Top Catagory Area CSS
+    -------------------------- */
+
+    .single_catagory_area {
+        padding: 150px 50px;
+        width: 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        position: relative;
+        z-index: 1;
+    }
+
+    .single_catagory_area:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        /* background-color: #ff084e; */
+        background-color: rgb(89, 0, 255);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -8;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+    }
+
+    .single_catagory_area:hover:after {
+        opacity: 0.7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    }
+
+    .single_catagory_area h6 {
+        text-transform: uppercase;
+    }
+
+    .catagory-content {
+        width: 55%;
+    }
+
+    /* -------------------
+    :: 13.0 Testimonials CSS
+    ------------------- */
+
+    .single-testimonial-area .quote {
+        font-size: 72px;
+        font-weight: 700;
+        color: #ff084e;
+        line-height: 1;
+    }
+
+    .single-testimonial-area h6 {
+        line-height: 2;
+        color: #9f9f9f;
+    }
+
+    .testimonial-info {
+        margin-top: 60px;
+    }
+
+    .testimonial-info .tes-thumbnail {
+        width: 67px;
+        height: 67px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .testimonial-info .tes-thumbnail img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+
+    .testimonial-info .testi-data > p {
+        font-size: 14px;
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .testimonial-info .testi-data span {
+        font-size: 12px;
+        text-align: left;
+        display: block;
+        font-weight: 700;
+        color: #ff084e;
+    }
+
+    .karl-testimonials-slides.owl-carousel .owl-dots {
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        z-index: 5;
+        width: 30px;
+        background-color: transparent;
+        height: auto;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .karl-testimonials-slides.owl-carousel .owl-dot {
+        border: 2px solid #9f9f9f;
+        border-radius: 50%;
+        display: block;
+        height: 9px;
+        margin: 15px 10px;
+        width: 9px;
+    }
+
+    .karl-testimonials-slides.owl-carousel .owl-dot.active {
+        background-color: #ff084e;
+        border-color: #ff084e;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <a href="/home" style="text-decoration: none; color: black;">
+                <div class="brand" id="po">The Po Shop</div>
+                <div class="brand">all 'bout clothes</div>
+                <div class="brand" style="">for YOUNG.</div>
+            </a>
+            <!-- <img src="./static/img/tk.jpg" alt="tk" class="brand"> -->
+            
+        </div>
+    </header>
+
+
+    <div class="container-fluid" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="pill-nav collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trending">Trending</a>
+                    </li>
+                    <!-- dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#men">Men</a>
+                          <a class="dropdown-item" href="#women">Women</a>
+                        </div>
+                      </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- about -->
+    <div class="container-fluid about" id="about">
+        <p class="about1">Designed <br> by </p>
+        <p class="about2">Team4.</p>
+    </div>
+
+    <!-- ****** Top Catagory Area Start ****** -->
+    <section class="top_catagory_area d-md-flex clearfix">
+        <!-- Single Catagory -->
+        <div class="single_catagory_area d-flex align-items-center bg-img" style="background-image: url(./static/img/test.jpg);">
+            <div class="catagory-content">
+                <h6></h6>
+                <h2>MENS</h2>
+                <a href="/shop" class="btn karl-btn">SHOP NOW</a>
+            </div>
+        </div>
+        <!-- Single Catagory -->
+        <div class="single_catagory_area d-flex align-items-center bg-img" style="background-color: rgb(192, 121, 39);;">
+            <div class="catagory-content">
+                <!-- <h6>in Bags excepting the new collection</h6> -->
+                <h2>WOMENS</h2>
+                <a href="/shop" class="btn karl-btn">SHOP NOW</a>
+            </div>
+        </div>
+    </section>
+    <!-- ****** Top Catagory Area End ****** -->
+    
+
+    <!-- jumbotron -->
+    <!-- <div class="jumbotron" style="margin-top: 20px;">
+        <h1>Hello, world!</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    </div> -->
+    <!-- sroll to top -->
+    <div class="scrolltop">
+        <div class="scroll icon"><i class="fa fa-4x fa-angle-up"></i></div>
+    </div>
+    <!-- content -->
+    <div class="container-fluid">
+        <div class="title" id="trending">Trending.</div>
+        
+        <div class="container">
+            <div class="row" style="">
+                {% for i in sample %}
+                <div class="product col-sm-4 text-center">
+                    <div>
+                        <a href="#">
+                            <img src="{{ i['image'] }}" alt="" class="product-img">
+                        </a>
+                    </div>
+                    <div class="product-name">{{ i["name"] }}</div>
+                    <div class="product-price">{{ i["price"] }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="loadMore text-center" style="margin: 50px;">
+        <a href="/shop" class="btn btn-lg btn-outline-secondary" style="border-radius: 0;">More items</a>
+    </div>
+    
+    <!-- Banner -->
+	<!-- <div class="sec-banner bg0 p-t-80 p-b-50">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto"> -->
+					<!-- Block1 -->
+					<!-- <div class="block1 wrap-pic-w">
+						<img src="./static/img/leon-ell-1319174-unsplash" alt="IMG-BANNER">
+
+						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+							<div class="block1-txt-child1 flex-col-l">
+								<span class="block1-name ltext-102 trans-04 p-b-8">
+									Women
+								</span>
+
+								<span class="block1-info stext-102 trans-04">
+									Spring 2018
+								</span>
+							</div>
+
+							<div class="block1-txt-child2 p-b-4 trans-05">
+								<div class="block1-link stext-101 cl0 trans-09">
+									Shop Now
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto"> -->
+					<!-- Block1 -->
+					<!-- <div class="block1 wrap-pic-w">
+						<img src="./static/img/davids-kokainis-639292-unsplash.jpg" alt="IMG-BANNER">
+
+						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+							<div class="block1-txt-child1 flex-col-l">
+								<span class="block1-name ltext-102 trans-04 p-b-8">
+									Men
+								</span>
+
+								<span class="block1-info stext-102 trans-04">
+									Spring 2018
+								</span>
+							</div>
+
+							<div class="block1-txt-child2 p-b-4 trans-05">
+								<div class="block1-link stext-101 cl0 trans-09">
+									Shop Now
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-xl-4 p-b-30 m-lr-auto"> -->
+					<!-- Block1 -->
+					<!-- <div class="block1 wrap-pic-w">
+						<img src="./static/img/4.jpg" alt="IMG-BANNER">
+
+						<a href="product.html" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
+							<div class="block1-txt-child1 flex-col-l">
+								<span class="block1-name ltext-102 trans-04 p-b-8">
+									Accessories
+								</span>
+
+								<span class="block1-info stext-102 trans-04">
+									New Trend
+								</span>
+							</div>
+
+							<div class="block1-txt-child2 p-b-4 trans-05">
+								<div class="block1-link stext-101 cl0 trans-09">
+									Shop Now
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+    <div class="about-final" style="background-image: url(./static/img/angle.jpg);
+    height: 500px; width: 100%;
+    position: relative">
+        <div class="abouttt" style="color: white;
+        position: absolute;
+        top: 250px;
+        left: 150px;">Po. is a brand following the vintage street culture. Based in Hanoi <br>
+                We sell good items, not cheap ones!</div>
+    </div>
+    
+    <!-- email form -->
+    <div class="newsletter" style="padding: 60px 0; box-sizing: border-box;">
+        <div class="wrappp" style="text-align: center;">
+            <label for="subscribe" style="font-size: 1.4em; font-family: Pier Sans,sans-serif;
+                letter-spacing: .4em; line-height: 1.6em; text-transform: uppercase;">Subscribe to our newsletter <br>
+            to get special offers!</label>
+            <hr style="width: 10%;">
+            <form action="/home" method="POST">
+                <div class="input-group input-group-lg mx-auto" style="width: 80%; ">
+                    <input type="text"
+                    name="email" 
+                    class="form-control" 
+                    placeholder="Your email address" 
+                    aria-label="Your email address" 
+                    aria-describedby="basic-addon2"
+                    style="background-color: #e6e6e6; height: 85px; font-family: Open Sans,sans-serif;
+                            font-weight: 300; padding: 1.5em 2.2em; font-size: 1.1em; border-radius: 0;">
+                    <button class="btn btn-outline-secondary" 
+                            type="button" 
+                            style="border-radius: 0; 
+                            background-color: #6a24fa;
+                            color: white;
+                            text-transform: uppercase;
+                            padding: .5em 2.9em;
+                            font-family: Pier Sans,sans-serif;
+                            font-size: 1.1em;
+                            letter-spacing: 3px;">Subscribe</button>
+                </div>
+            </form>  
+        </div>
+    </div>
+    
+
+
+    
+
+    <!-- footer -->
+    <div class="footer" style="background-color: black; color: white; padding: 20px; margin: 0;">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <p>The Po Shop</p>
+                <p>Hanoi, Vietnam</p>
+                <p>trgle0409@gmail.com</p>
+            </div>
+            
+            <div class="col-sm-4">
+                <a href="#" class="icon-footer">
+                    <i class="fab fa-facebook-square" style="transform: scale(2); margin-right: 20px;"></i>
+                </a>
+                <a href="#" class="icon-footer">
+                    <i class="fab fa-instagram" style="transform: scale(2);"></i>
+                </a>
+            </div>
+    
+            <div class="col-sm-4">
+                <p>&copy;thePo</p>
+            </div>
+        </div>
+    </div>
+
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+    <script type="text/javascript">
+        var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow83.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+    </script>
+    
+
+
+    <!-- sticky navbar -->
+    <!-- <script> 
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            } else {
+            navbar.classList.remove("sticky");
+            }
+        }
+    </script> -->
+        
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html> 

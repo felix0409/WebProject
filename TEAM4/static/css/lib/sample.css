@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+
+}
+
+img.brand {
+    float: right;
+}
+
+.brand {    
+    margin-left: 25px;
+    margin-top: 10px;
+    letter-spacing: .4em;
+    font-size: 1.5em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    margin-top: 130px;
+}
+
+#navbar {
+    margin-top: 100px;
+}
+
+
+.about {
+    position: relative;
+    background-image: url(./static/img/statue-pts.jpg);
+    min-width: 100%;
+    height: 590px;
+    background-size: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+/* .aboutme {
+    max-width: 100%;
+    height: auto;
+} */
+p.about1 {
+    position: absolute;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    /* text-transform: uppercase; */
+    max-width: 100%;
+    height: auto;
+    right: 250px;
+    bottom: 300px;
+}
+
+p.about2 {
+    position: absolute;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    /* text-transform: uppercase; */
+    max-width: 100%;
+    height: auto;
+    right: 250px;
+    bottom: 300px; 
+    color: black;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.title {
+    margin-left: 20px;
+    margin-top: 200px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-family: 'Nanum Gothic Coding', monospace;
+
+}
+.product-img {
+    margin: 0;
+    max-width: 1064px;
+    height: 23em;
+}
+
+/* button {
+    margin: 10px;
+} */
+
+.product-price {
+    font-size: 1.1em;
+    margin-top: .5em;
+    letter-spacing: .1em;
+    color: #6a24fa;
+
+}
+/* start pill-nav */
+.pill-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.pill-nav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.pill-nav a.active {
+background-color: dodgerblue;
+color: white;
+}
+/* end pill-nav */
+
+/* flex */
+.featured-background {
+    max-width: 516px;
+    max-height: 619px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.featured {
+    display: flex;
+    background-color: rgba(189, 183, 184, 0.342);
+}
+
+.featured-block {
+    margin: 100px;
+}
+
+.featured-title {
+    font-size: 2.5rem;
+}
+
+a.featured-imageWrap {
+    text-decoration: none;
+}
+
+.featured-block1 {
+    margin-top: 250px;
+}
+
+/* footer icon */
+a.icon-footer:link {
+    text-decoration: none;
+}
+
+a.icon-footer:visited {
+    color: white;
+}
+
+/* scroll to top */
+.scrolltop {
+    display:none;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    bottom:20px;
+    right:10px;	
+}
+.scroll {
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    background:#b2b2b2;
+    background:rgba(178,178,178,0.7);
+    padding:20px;
+    text-align: center;
+    margin: 0 0 0 0;
+    cursor:pointer;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 		
+}
+.scroll:hover {
+    background:rgba(178,178,178,1.0);
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+    padding-top:-10px;
+}
+.scroll .fa {
+    font-size:30px;
+    margin-top:-5px;
+    margin-left:1px;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s; 	
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./static/css/lib/styles2.css">
+</head>
+<body>
+  <div class="header">
+    <nav class="my-nav navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- mobile display -->
+        <a class="navbar-brand" href="#">The Po.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li>
+                <i class="fas fa-search nav-link"></i>
+            </li>
+            <li>
+                <i class="fas fa-shopping-cart nav-link"></i>
+            </li>
+          </ul>
+        </div>
+      </div>    
+    </nav>
+  </div>
+
+ <!--filter buttons -->
+    <div class="row">
+      <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="mens"></a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">cupcakes</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">sweets</a>
+        <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">doughnuts</a>
+      </div>
+    </div>
+  <!-- search box -->
+  <div class="row">
+
+    <div class="col-10 mx-auto col-md-6">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend ">
+            <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+          </div>
+          <input type="text" class="form-control" placeholder='item....' id="search-item">
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+      
+  <!-- clothes for mens -->
+  <div class="container">
+    <div class="caption text-center">
+      <h2>#MENS</h2>
+    </div>
+    <hr>
+    
+    <div class="container">
+      <div class="row">
+        {% for i in mens %}
+        <div class="col-sm-4 text-center">
+          <img src="{{ i['image'] }}" alt="" class="img-content">
+          <label for="">{{ i['name'] }}</label>
+          <div>{{ i['price'] }}</div>
+          <button class="btn btn-primary">Add to cart</button>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+
+    <!-- pagination -->
+    <div class="center">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+    
+    <!-- footer -->
+    <hr>
+    <div class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <ul>
+              <li>Shop</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <ul>
+              <li><i class="fab fa-facebook-f"></i> Facebook</li>
+              <li><i class="fab fa-instagram"></i> Instagram</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul>
+              <li>2019, Team4.</li>
+              <li>Techkids.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
